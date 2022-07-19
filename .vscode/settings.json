@@ -1,0 +1,7 @@
+{
+  "livePreview.defaultPreviewPath": "/index.html",
+  "liveServer.settings.multiRootWorkspaceName": "#000_Test",
+  "liveServer.settings.fullReload": true,
+  "liveServer.settings.port": 0,
+  "liveServer.settings.useWebExt": true
+}

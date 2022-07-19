@@ -1,0 +1,116 @@
+$color-text1: #1c1616;
+$color-text2: #50220f;
+$color-text3: #664b42;
+$color-text4: #776157;
+$color-second: #f4eee5;
+$color-accent: #fd9f32;
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Mulish', sans-serif;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+input {
+  font-family: Mulish;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  font-family: Mulish;
+  border: none;
+  outline: none;
+}
+
+button {
+  font-family: Mulish;
+  border: none;
+  background: none;
+  &.btn-order {
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 6px;
+    padding: 16px 26px;
+    background-color: $color-accent;
+    box-shadow: 13px 4px 30px rgba(203, 173, 149, 0.45);
+    transition: box-shadow 0.3s;
+    &:hover {
+      box-shadow: 13px 4px 30px rgba(203, 173, 149, 0.45),
+        3px 4px 30px rgba(203, 173, 149, 0.8);
+    }
+  }
+  &.btn-more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    & p {
+      margin-right: 8px;
+      color: $color-text3;
+      font-size: 18px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+    & svg path {
+      fill: $color-text3;
+      transition: 0.3s;
+    }
+    &:hover {
+      & p {
+        color: $color-accent;
+      }
+      & svg path {
+        fill: $color-accent;
+      }
+    }
+  }
+}
